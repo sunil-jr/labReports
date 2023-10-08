@@ -10,11 +10,11 @@ public class IntegerChecker {
         try {
             int parsed = Integer.parseInt(number);
             System.out.println("The number " + parsed + " is integer");
-            System.out.println("The square of the is " + Math.pow(parsed, 2));
+            System.out.println("The square is " + parsed * parsed);
         } catch (NumberFormatException e) {
             System.out.println(e.getMessage() + " -> The number is not integer");
         } finally {
-            System.exit(0);
+            scanner.close();
         }
     }
 }
