@@ -4,7 +4,7 @@ public class NumberDivider {
     public static int divide(int dividend, int divisor) throws DivisionByZeroException {
         try {
             if (divisor == 0) {
-                throw new DivisionByZeroException("Number cannot be divided by zero");
+                throw new DivisionByZeroException("Number "+dividend+" cannot be divided by "+ divisor);
             } else
                 return dividend / divisor;
         } catch (DivisionByZeroException e) {
